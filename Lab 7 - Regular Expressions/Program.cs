@@ -7,22 +7,21 @@ namespace Lab_7___Regular_Expressions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gimmie name!");
-            string nameInput = Console.ReadLine();
+
 
             //name 
+            string nameInput = GetUserInput("Please enter a name:");
             if (AskIfName(nameInput))
             {
-                Console.WriteLine("Probably a name(main)");
+                Console.WriteLine("Probably a name.");
             }
             else
             {
-                Console.WriteLine("Probably not a name");
+                Console.WriteLine("Probably not a name.");
             }
 
             //email
-            Console.WriteLine("Gimmie email!");
-            string emailInput = Console.ReadLine();
+            string emailInput = GetUserInput("Enter an email address:");
             {
                 if (AskIfValidEmail(emailInput))
                 {
@@ -35,8 +34,7 @@ namespace Lab_7___Regular_Expressions
             }
 
             //phone #
-            Console.WriteLine("Enter phone number: (Format: xxx-xxx-xxxx)");
-            string phoneNoInput = Console.ReadLine();
+            string phoneNoInput = GetUserInput("Enter a phone number ");
             if(AskIfValidPhoneNumber(phoneNoInput))
             {
                 Console.WriteLine("Probably a valid phone #.");
@@ -46,8 +44,8 @@ namespace Lab_7___Regular_Expressions
                 Console.WriteLine("Probably not a valid phone #.");
             }
 
-            Console.WriteLine("Enter a date: (mm/dd/yyyy).");
-            string dateInput = Console.ReadLine();
+            //date
+            string dateInput = GetUserInput("Enter a date: (mm/dd/yyyy)");
             if(AskIfValidDate(dateInput))
             {
                 Console.WriteLine("Probably a valid date.");
@@ -56,6 +54,14 @@ namespace Lab_7___Regular_Expressions
             {
                 Console.WriteLine("Probably NOT a valid date.");
             }
+        }
+
+
+        public static string GetUserInput(string prompt)
+        {
+            Console.WriteLine(prompt);
+            string input = Console.ReadLine();
+            return input;
         }
 
         public static bool AskIfName(string name)
@@ -75,10 +81,10 @@ namespace Lab_7___Regular_Expressions
             }
         }
 
-
         public static bool AskIfValidEmail(string maybeEmail)
         {
-            string emailPattern = "^([A-Za-z0-9]+)@([A-Za-z0-9]{1,10}).([A-Za-z0-9]{1,3})$";
+            //string emailPattern = "^([A-Za-z0-9]+)@([A-Za-z0-9]{1,10}).([A-Za-z0-9]{1,3})$";
+            string emailPattern = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}";
 
             // email address before @ => ([A-Za-z0-9]+)
             // @ => @
@@ -98,7 +104,7 @@ namespace Lab_7___Regular_Expressions
 
         public static bool AskIfValidPhoneNumber(string maybePhoneNumber)
         {
-            string phoneNoPattern = @"^([0-9]{3}(.|-))([0-9]{3}(.|-))([0-9]{4})$";
+            string phoneNoPattern = @"^([0-9]{10})|([0-9]{3}(.|-))([0-9]{3}(.|-))([0-9]{4})$";
 
             if(Regex.IsMatch(maybePhoneNumber, phoneNoPattern))
             {
@@ -114,7 +120,7 @@ namespace Lab_7___Regular_Expressions
         {
             
             //date pattern is dd/mm/yyyy
-            string datePattern = @"^([0-12]{2})/([0-31]{2})/([0-9]{4})$";
+            string datePattern = @"^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.]\d\d\d\d$";
 
             if (Regex.IsMatch(maybeDate, datePattern))
             {
