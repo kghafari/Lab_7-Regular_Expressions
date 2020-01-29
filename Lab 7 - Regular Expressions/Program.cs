@@ -67,7 +67,7 @@ namespace Lab_7___Regular_Expressions
         public static bool AskIfName(string name)
         {
             //Starts at ... start of word (^), first position must be a capital letter ([A-Z]), second thru (up to) 30th position must be lowercase ([a-z]{1,30}), end of word ($)
-            string namePattern = "^[A-Z][a-z]{1,30}$";
+            string namePattern = "^([A-Z][a-z]{1,30})$";
             //string nameRegEx = "^([A-Z])([a-z]{1,30})$";
             if (Regex.IsMatch(name, namePattern))
             {
@@ -86,11 +86,12 @@ namespace Lab_7___Regular_Expressions
             //string emailPattern = "^([A-Za-z0-9]+)@([A-Za-z0-9]{1,10}).([A-Za-z0-9]{1,3})$";
             string emailPattern = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}";
 
-            // email address before @ => ([A-Za-z0-9]+)
-            // @ => @
-            // website => ([A-Za-z0-9]{1,10})
+            // email address before @ => ([A-Za-z0-9._%+-])
+            // @ => +@
+            // website => ([A-Za-z0-9.-]) IIAP technically allows URLS up to 2,083 characters
+                    //see "www.llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogochuchaf.eu" for example. If i was going to limit it, it would be like... {1,200}
             // . => .
-            // domain => ([A-Za-z0-9]{1,3})
+            // domain => ([A-Za-z]{2,}) IIAP allows domains up to like... 63 characters. Must be 2 minimum (Country domains, e.g. ".us" ".ru" ".br") 
 
             if (Regex.IsMatch(maybeEmail, emailPattern))
             {

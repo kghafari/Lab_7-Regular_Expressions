@@ -1,0 +1,11 @@
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\bin\Debug\netcoreapp3.0\ReferencingCopyingArrays.exe
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\bin\Debug\netcoreapp3.0\ReferencingCopyingArrays.deps.json
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\bin\Debug\netcoreapp3.0\ReferencingCopyingArrays.runtimeconfig.json
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\bin\Debug\netcoreapp3.0\ReferencingCopyingArrays.runtimeconfig.dev.json
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\bin\Debug\netcoreapp3.0\ReferencingCopyingArrays.dll
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\bin\Debug\netcoreapp3.0\ReferencingCopyingArrays.pdb
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\obj\Debug\netcoreapp3.0\ReferencingCopyingArrays.csprojAssemblyReference.cache
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\obj\Debug\netcoreapp3.0\ReferencingCopyingArrays.AssemblyInfoInputs.cache
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\obj\Debug\netcoreapp3.0\ReferencingCopyingArrays.AssemblyInfo.cs
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\obj\Debug\netcoreapp3.0\ReferencingCopyingArrays.dll
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\ReferencingCopyingArrays\obj\Debug\netcoreapp3.0\ReferencingCopyingArrays.pdb

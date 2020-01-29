@@ -1,0 +1,11 @@
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\bin\Debug\netcoreapp3.0\AverageArrayElements.exe
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\bin\Debug\netcoreapp3.0\AverageArrayElements.deps.json
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\bin\Debug\netcoreapp3.0\AverageArrayElements.runtimeconfig.json
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\bin\Debug\netcoreapp3.0\AverageArrayElements.runtimeconfig.dev.json
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\bin\Debug\netcoreapp3.0\AverageArrayElements.dll
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\bin\Debug\netcoreapp3.0\AverageArrayElements.pdb
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\obj\Debug\netcoreapp3.0\AverageArrayElements.csprojAssemblyReference.cache
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\obj\Debug\netcoreapp3.0\AverageArrayElements.AssemblyInfoInputs.cache
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\obj\Debug\netcoreapp3.0\AverageArrayElements.AssemblyInfo.cs
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\obj\Debug\netcoreapp3.0\AverageArrayElements.dll
+C:\Users\kyleg\source\repos\Lab 7 - Regular Expressions\AverageArrayElements\obj\Debug\netcoreapp3.0\AverageArrayElements.pdb
